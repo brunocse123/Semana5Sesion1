@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: red;
+}
+
+.flex {
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex div {
+  display: inline-flex; /* Alinea solo ocupara el anco de sus hijos*/
+  display: flex; /* abarcara todo el ancho del padre */
+  flex-direction: column; /*Alineacion como columna*/
+  flex-direction: column-reverse; /* 4 3 2 1 */
+  width: 50px;
+  padding: 10px;
+  background-color: red;
+}
+.flex div:nth-child(even) {
+  background: green;
+}
+
+.flexwrap {
+  display: flex; /* abarcara todo el ancho del padre */
+  flex-direction: row; /*Alineacion como columna*/
+  flex-wrap: wrap; /*h*/
+  width: 200px;
+}
+
+.flexwrap div {
+  width: 100px;
+}
+
+.flexjustify {
+  display: flex; /* abarcara todo el ancho del padre */
+  justify-content: flex-end;
+  width: 200px;
+}
+
+.flexjustify div {
+  background-color: red;
+}
+
+.flexjustify div:nth-child(event) {
+  background-color: blue;
+}
+
+ul {
+    background-color: yellowgreen;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  /*align-items: center;*/
+  height: 100px;
+  flex-wrap: wrap;
+}
+li {
+  margin: 0 10px;
+  
+}
+
+li:nth-child(2){
+    align-self: center;
+}
+
+li:nth-child(3){
+    align-self: flex-end;
+}
+
+
+li:first-child{
+
+}

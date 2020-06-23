@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  color: white;
+  width: 400px;
+  background-color: orange;
+}
+
+.flex div {
+  background-color: red;
+  width: 20px;
+}
+
+.flex div:nth-child(even) {
+  background: green;
+}
+
+.flex div:last-child {
+  /*
+    espacio disponible = 200
+    suma todos los flex-grow = 1
+    espacio disponible / suma de todos
+    */
+  flex-grow: 2;
+}
+
+.flex div:first-child {
+  /*
+    espacio disponible = 200
+    suma todos los flex-grow = 1
+    espacio disponible / suma de todos
+    */
+  flex-grow: 1;
+}
